@@ -11,20 +11,27 @@ public class ClassEmployee implements IPosition{
 
 	@Override
 	public void getWorkTime() {
-		// TODO Auto-generated method stub
+
+		try {
+			Thread.sleep(1200);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		
 	}
 
-	@Override
+	@Override // AfterReturning Advice 예시
 	public void normal(String title, int salary) {
-		// TODO Auto-generated method stub
+
+		System.out.println("직급 : " + title);
+		System.out.println("급여 : " + salary);
 		
 	}
 
-	@Override
+	@Override // AfterThrowing Advice 예시
 	public void mistake() {
-		// TODO Auto-generated method stub
-		
+
+		System.out.println(3/0);
 	}
 
 }

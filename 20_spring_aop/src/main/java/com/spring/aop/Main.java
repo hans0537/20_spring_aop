@@ -57,5 +57,22 @@ public class Main {
 		manager.work();
 		employee.work();
 		
+		System.out.println("\n\n\n");
+		
+		boss.getWorkTime();
+		manager.getWorkTime();
+		employee.getWorkTime();
+		
+		System.out.println("\n\n\n");
+
+		boss.normal("사장", 1000);
+		manager.normal("매니저", 600);
+		employee.normal("직원", 200);
+		
+		System.out.println("\n\n\n");
+		employee.mistake();
+		
+		
+		
 	}
 }

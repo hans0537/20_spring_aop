@@ -11,14 +11,19 @@ public class ClassBoss implements IPosition{
 
 	@Override
 	public void getWorkTime() {
-		// TODO Auto-generated method stub
-		
+
+		try {
+			Thread.sleep(300);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void normal(String title, int salary) {
-		// TODO Auto-generated method stub
-		
+
+		System.out.println("직급 : " + title);
+		System.out.println("급여 : " + salary);
 	}
 
 	@Override
